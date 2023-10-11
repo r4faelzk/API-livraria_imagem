@@ -11,6 +11,12 @@ const Categoria = require('./Categoria');
 const Livro = connection.define(
     'tbl_livro',
     {
+        codigo_livro:{
+            type: sequelize.INTEGER,
+            autoIncrement: true,
+            primaryKey: true
+        },
+
         titulo:{
             type: Sequelize.STRING,
             allowNull: false
@@ -20,11 +26,11 @@ const Livro = connection.define(
             allowNull: false
         },
         imagen_peq:{
-            type: Sequelize.STRING,
+            type: Sequelize.STRING(500),
             allowNull: false
         },
         imagen_grd:{
-            type: Sequelize.STRING,
+            type: Sequelize.STRING(500),
             allowNull: false
         },
         detalhes:{
