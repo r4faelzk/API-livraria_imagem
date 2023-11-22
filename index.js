@@ -8,7 +8,6 @@ const express = require("express");
 //INSTANCIA DE MODULO DO EXPRESS
 const app = express();
 
-
 //CONFIGURACAO PARA O EXPRESS MANIPULAR JSON  
 app.use(express.json());
 

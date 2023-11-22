@@ -32,10 +32,22 @@ const Livro = connection.define(
             type: Sequelize.STRING,
             allowNull: false
         },
+
+        imagem_peq_url:{
+            type: Sequelize.STRING,
+            allowNull: false
+        },
+
         imagem_grd:{
             type: Sequelize.STRING,
             allowNull: false
         },
+
+        imagem_grd_url:{
+            type: Sequelize.STRING,
+            allowNull: false
+        },
+
         detalhes:{
             type: Sequelize.TEXT,
             allowNull: false
